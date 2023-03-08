@@ -53,7 +53,8 @@ class Country extends \yii\db\ActiveRecord
      */
     public function getSportsCountries()
     {
-        return $this->hasMany(SportsCountry::class, ['country_id' => 'country_id']);
+//        return $this->hasMany(SportsCountry::class, ['country_id' => 'country_id']);
+        return $this->hasMany(Sports::class, ['sport_id' => 'sport_id'])->viaTable(SportsCountry::class, ['country_id' => 'country_id']);
     }
 
     public function getArticlesC()
