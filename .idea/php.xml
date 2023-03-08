@@ -91,6 +91,8 @@
       <path value="$PROJECT_DIR$/vendor/npm-asset/bootstrap-icons" />
       <path value="$PROJECT_DIR$/vendor/yiisoft/yii2-imagine" />
       <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-krajee-base" />
+      <path value="$PROJECT_DIR$/vendor/kartik-v/yii2-widget-datepicker" />
     </include_path>
   </component>
 </project>

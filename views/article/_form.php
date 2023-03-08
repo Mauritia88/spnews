@@ -3,6 +3,7 @@
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\date\DatePicker;
 
 /** @var yii\web\View $this */
 /** @var app\models\Article $model */
@@ -19,7 +20,16 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'date')->textInput()->label('Дата') ?>
+    <?= $form->field($model, 'image')->fileInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'date')->widget(DatePicker::className(),[
+        'language' => 'ru',
+        'pluginOptions' => [
+            'format' => 'yyyy-mm-dd',
+            'todayHighlight' => true,
+            'autoclose' => true
+        ]
+    ]) ?>
 
     <?= $form->field($model, 'sport_id')->dropDownList(ArrayHelper::map(\app\models\Sports::find()->all(), 'sport_id', 'sport'),
         ['prompt' => 'Укажите вид спорта'])->label(false); ?>

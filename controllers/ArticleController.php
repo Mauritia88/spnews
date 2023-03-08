@@ -73,9 +73,13 @@ class ArticleController extends Controller
     public function actionCreate()
     {
         $model = new Article();
+        $upload = new ImageUpload;
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->saveArticle()) {
+                if ($file = uploadedFile::getInstance($model, 'image')) {
+                    $model->saveImage($upload->uploadFile($file, $model->image));
+                }
                 return $this->redirect(['/site/index']);
             }
         } else {
@@ -97,8 +101,12 @@ class ArticleController extends Controller
     public function actionUpdate($article_id)
     {
         $model = $this->findModel($article_id);
+        $upload = new ImageUpload;
 
         if ($this->request->isPost && $model->load($this->request->post()) && $model->saveArticle()) {
+            if ($file = uploadedFile::getInstance($model, 'image')) {
+                $model->saveImage($upload->uploadFile($file, $model->image));
+            }
             return $this->redirect(['/site/index']);
         }
 

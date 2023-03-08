@@ -58,15 +58,15 @@ class Article extends \yii\db\ActiveRecord
     {
         return [
             'article_id' => 'ID',
-            'title' => 'Title',
-            'description' => 'Description',
-            'content' => 'Content',
-            'date' => 'Date',
-            'image' => 'Image',
+            'title' => 'Название',
+            'description' => 'Описание',
+            'content' => 'Статья',
+            'date' => 'Дата статьи',
+            'image' => 'Картинка',
             'viewed' => 'Viewed',
-            'user_id' => 'User ID',
+            'user_id' => 'Автор',
             'status' => 'Status',
-            'sport_id' => 'Sport ID',
+            'sport_id' => 'Вид спорта',
         ];
     }
 
@@ -110,7 +110,7 @@ class Article extends \yii\db\ActiveRecord
 
     public function getImage()
     {
-        return ($this->image) ? '/uploads/' . $this->image : '/no-image.png';
+        return ($this->image) ? '/uploads/' . $this->image : '/web/uploads/no-image.jpg';
     }
 
     public function deleteImage()

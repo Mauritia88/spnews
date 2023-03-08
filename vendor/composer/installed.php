@@ -226,6 +226,26 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'kartik-v/yii2-krajee-base' => array(
+            'pretty_version' => 'v3.0.5',
+            'version' => '3.0.5.0',
+            'reference' => '5c095126d1be47e0bb1f92779b7dc099f6feae31',
+            'type' => 'yii2-extension',
+            'install_path' => __DIR__ . '/../kartik-v/yii2-krajee-base',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'kartik-v/yii2-widget-datepicker' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '04ee13be77790ee14d92c34f3181e521f6457639',
+            'type' => 'yii2-extension',
+            'install_path' => __DIR__ . '/../kartik-v/yii2-widget-datepicker',
+            'aliases' => array(
+                0 => '1.4.x-dev',
+            ),
+            'dev_requirement' => false,
+        ),
         'mihaildev/yii2-ckeditor' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',

@@ -8,6 +8,9 @@ use yii\helpers\Url;
         <div class="row">
             <div class="col-md-8">
                 <article class="post1">
+                    <div class="post-thumb">
+                        <img src="<?= $article->getImage();?>" alt="" class="img-fluid">
+                    </div>
                     <div class="post-content">
                         <header class="entry-header text-center text-uppercase">
                             <h6><a href="<?= Url::toRoute(['site/category','id'=>$article->sport->sport_id])?>"> <?= $article->sport->sport?></a></h6>

@@ -12,8 +12,6 @@ use yii\widgets\LinkPager;
             foreach($popular as $article):?>
                 <div class="popular-post">
                     <a href="<?= Url::toRoute(['site/view','id'=>$article->article_id]);?>" class="popular-img"><img src="<?= $article->getImage();?>" alt="">
-
-                        <div class="p-overlay"></div>
                     </a>
 
                     <div class="p-content">
@@ -30,11 +28,10 @@ use yii\widgets\LinkPager;
             <?php foreach($recent as $article):?>
                 <div class="thumb-latest-posts">
                     <div class="media">
-                        <div class="media-left">
-                            <a href="<?= Url::toRoute(['site/view','id'=>$article->article_id]);?>" class="popular-img"><img src="<?= $article->getImage();?>" alt="">
-                                <div class="p-overlay"></div>
-                            </a>
-                        </div>
+<!--                        <div class="media-left">-->
+<!--                            <a href="--><?//= Url::toRoute(['site/view','id'=>$article->article_id]);?><!--" class="popular-img"><img src="--><?//= $article->getImage();?><!--" alt="">-->
+<!--                            </a>-->
+<!--                        </div>-->
                         <div class="p-content">
                             <a href="<?= Url::toRoute(['site/view','id'=>$article->article_id]);?>" class="text-uppercase"><?= $article->title?></a>
                             <span class="p-date"><?= $article->getDate();?></span>

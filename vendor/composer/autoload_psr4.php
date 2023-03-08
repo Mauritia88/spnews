@@ -15,6 +15,8 @@ return array(
     'yii\\bootstrap4\\' => array($vendorDir . '/yiisoft/yii2-bootstrap4/src'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'mihaildev\\ckeditor\\' => array($vendorDir . '/mihaildev/yii2-ckeditor'),
+    'kartik\\date\\' => array($vendorDir . '/kartik-v/yii2-widget-datepicker/src'),
+    'kartik\\base\\' => array($vendorDir . '/kartik-v/yii2-krajee-base/src'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
     'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
     'Symfony\\Polyfill\\Php73\\' => array($vendorDir . '/symfony/polyfill-php73'),

@@ -42,6 +42,11 @@ class ComposerStaticInitb348a1c39df3781886092260fd563708
         array (
             'mihaildev\\ckeditor\\' => 19,
         ),
+        'k' => 
+        array (
+            'kartik\\date\\' => 12,
+            'kartik\\base\\' => 12,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -141,6 +146,14 @@ class ComposerStaticInitb348a1c39df3781886092260fd563708
         'mihaildev\\ckeditor\\' => 
         array (
             0 => __DIR__ . '/..' . '/mihaildev/yii2-ckeditor',
+        ),
+        'kartik\\date\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-datepicker/src',
+        ),
+        'kartik\\base\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-krajee-base/src',
         ),
         'cebe\\markdown\\' => 
         array (

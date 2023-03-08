@@ -45,6 +45,7 @@ main {
 
 .post-thumb img {
     width: 100%;
+    padding-top: 70px;
 }
 
 a.more-link {
