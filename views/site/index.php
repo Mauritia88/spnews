@@ -24,10 +24,13 @@ $this->title = Yii::$app->name;
                     <?php endif ?>
                 </div>
                 <?php foreach ($articles as $article): ?>
-                    <div class="post-thumb">
-                        <div class="text-uppercase text-center margin-bottom"></div>
-                    </div>
                     <article class="post1">
+<!--                        <div class="post-thumb">-->
+<!--                            <a href="--><?//= Url::toRoute(['site/view', 'id'=>$article->article_id]);?><!--"><img src="--><?//= $article->getImage();?><!--" alt=""></a>-->
+<!--                            <a href="--><?//= Url::toRoute(['site/view', 'id'=>$article->article_id]);?><!--" class="post-thumb-overlay text-center">-->
+<!--                                <div class="text-uppercase text-center">View Post</div>-->
+<!--                            </a>-->
+<!--                        </div>-->
                         <div class="post-content">
                             <header class="entry-header text-center text-uppercase">
                                 <h6 class="decoration"><a
