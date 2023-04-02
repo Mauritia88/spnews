@@ -45,7 +45,7 @@ PublicAsset::register($this);
                 ['label' => 'Добавить статью', 'url' => ['/article/create']]
             ) : '',
 
-            Yii::$app->user->identity->isAdmin ?(
+            !Yii::$app->user->isGuest && Yii::$app->user->identity->isAdmin  ?(
                     ['label' => 'Админка', 'url' => ['/admin/welcome/index']]
             ) : '',
 

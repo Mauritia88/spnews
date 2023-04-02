@@ -69,6 +69,7 @@ class SiteController extends Controller
         $popular = Article::getPopular();
         $categories = Sports::getAll();
         $country = Country::getAll();
+        $search = null;
 
         return $this->render('index', [
             'articles' => $data['articles'],
@@ -76,7 +77,8 @@ class SiteController extends Controller
             'popular' => $popular,
             'recent' => $recent,
             'categories' => $categories,
-            'countryes' => $country
+            'countryes' => $country,
+            'search' => $search
         ]);
     }
 
